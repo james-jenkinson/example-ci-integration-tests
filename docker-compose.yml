@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: dockerfiles/api.dockerfile
+    container_name: api
+    command: './build/index.js'
+    ports:
+      - 3000:3000
+
+  api-watch:
+    build:
+      context: .
+      dockerfile: dockerfiles/api-watch.dockerfile
+    container_name: api
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/src
+
+networks:
+  api-backend:
+    driver: bridge
