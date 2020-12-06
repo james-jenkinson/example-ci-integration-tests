@@ -1,5 +1,11 @@
 {
   "app": {
     "port": 3000
+  },
+  "mongo": {
+    "uri": "mongodb://mongo:27017",
+    "username": "root",
+    "password": "password",
+    "database": "application_database"
   }
 }

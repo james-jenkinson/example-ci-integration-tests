@@ -1,0 +1,17 @@
+name: 'Default'
+on:
+  push:
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+      - name: Install dependencies
+        run: npm install
+      - name: Run linter
+        run: npm run lint

@@ -5,7 +5,7 @@ const routes: RouteConfiguration[] = [
   {
     path: '/auth/login',
     controller: authController.login,
-    method: 'get'
+    method: 'post'
   }
 ]
 

@@ -8,4 +8,4 @@ RUN npm install
 RUN npm install -g nodemon@2.0.2
 
 ENTRYPOINT [ "nodemon" ]
-CMD [ "--watch",  "./src", "--ext", ".ts", "--exec", "./node_modules/.bin/tsc && node ./build/index.js" ]
+CMD [ "--watch",  "./src", "--watch", "./config", "--ext", ".ts", "--exec", "./node_modules/.bin/tsc && node ./build/index.js" ]

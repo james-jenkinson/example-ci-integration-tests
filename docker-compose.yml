@@ -9,6 +9,8 @@ services:
     command: './build/index.js'
     ports:
       - 3000:3000
+    depends_on:
+      - mongo
 
   api-watch:
     build:
@@ -17,8 +19,18 @@ services:
     container_name: api
     ports:
       - 3000:3000
+    depends_on:
+      - mongo
     volumes:
       - ./src:/src
+      - ./config:/config
+
+  mongo:
+    image: mongo:4.2
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
 
 networks:
   api-backend:
