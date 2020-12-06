@@ -1,12 +1,12 @@
-import authController from '../controllers/auth.controllers';
-import { RouteConfiguration } from '.';
+import authController from '../controllers/auth.controllers'
+import { RouteConfiguration } from '.'
 
 const routes: RouteConfiguration[] = [
   {
-    path: "/auth/login",
+    path: '/auth/login',
     controller: authController.login,
-    method: 'get',
-  },
-];
+    method: 'get'
+  }
+]
 
-export default routes;
+export default routes

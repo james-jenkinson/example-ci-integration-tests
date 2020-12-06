@@ -1,11 +1,11 @@
-import { RequestHandler } from 'express';
-import authRoutes from './auth.routes';
-import healthRoutes from './health.routes';
+import { RequestHandler } from 'express'
+import authRoutes from './auth.routes'
+import healthRoutes from './health.routes'
 
 export interface RouteConfiguration {
- path: string,
- controller: RequestHandler,
- method: 'get' | 'post',
+  path: string
+  controller: RequestHandler
+  method: 'get' | 'post'
 }
 
 interface RouteCollection {
@@ -14,7 +14,7 @@ interface RouteCollection {
 
 const routes: RouteCollection = {
   authRoutes,
-  healthRoutes,
-};
+  healthRoutes
+}
 
-export default routes;
+export default routes
