@@ -1,12 +1,13 @@
 FROM node:14.15.1
 
 ADD package.json .
+ADD .mocharc.json .
 ADD tsconfig.json .
-ADD src ./src
+ADD test ./test
+ADD helpers ./helpers
 ADD config ./config
 
 RUN npm install
 
-RUN ./node_modules/.bin/tsc
-
-ENTRYPOINT ["node"]
+ENTRYPOINT [ "npm" ]
+CMD [ "test" ]

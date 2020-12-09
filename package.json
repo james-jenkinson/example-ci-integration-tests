@@ -8,19 +8,24 @@
     "CI",
     "Integration tests"
   ],
+  "ts-standard": {
+    "ignore": [
+      "test-integration/mongo-init/*"
+    ]
+  },
   "author": "James Jenkinson",
   "license": "ISC",
   "dependencies": {
-    "config": "~3.2.4",
-    "express": "~4.17.1",
-    "mongodb": "~3.6.3",
-    "yup": "~0.32.1"
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "yup": "^0.32.1"
   },
   "devDependencies": {
     "@types/config": "0.0.36",
-    "@types/express": "~4.17.2",
-    "@types/mongodb": "~3.6.1",
-    "ts-standard": "~9.0.0",
-    "typescript": "~4.1.2"
+    "@types/express": "^4.17.2",
+    "@types/mongodb": "^3.6.1",
+    "ts-standard": "^9.0.0",
+    "typescript": "^4.1.2"
   }
 }

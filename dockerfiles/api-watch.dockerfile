@@ -1,4 +1,4 @@
-FROM node:13.5.0
+FROM node:14.15.1
 
 ADD package.json .
 ADD tsconfig.json .

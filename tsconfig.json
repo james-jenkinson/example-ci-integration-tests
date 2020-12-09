@@ -17,7 +17,8 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./test-integration/**/*"
   ],
   "exclude": [
     "./node_modules/**/*"

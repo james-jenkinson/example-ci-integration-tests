@@ -19,7 +19,7 @@ const validatePassword = async (username: string, password: string): Promise<boo
   const collection = mongo.getDb().collection(collectionName)
   const user = await collection.findOne({ username })
 
-  return user.password === password
+  return user?.password === password
 }
 
 export default {

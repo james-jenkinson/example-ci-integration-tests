@@ -1,4 +1,5 @@
 ![Linting](https://github.com/james-jenkinson/example-ci-integration-tests/workflows/Linting/badge.svg)
+![Integration tests](https://github.com/james-jenkinson/example-ci-integration-tests/workflows/Integration-tests/badge.svg)
 
 # Running dockerised integration tests in Github Actions
 
