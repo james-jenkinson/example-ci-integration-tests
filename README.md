@@ -3,7 +3,7 @@
 
 # Running dockerised integration tests in Github Actions
 
-This project show an example of setting up a dockerised API to run integration tests against, allowing your integration tests to be run in every commit / pull request, and optionally to disable merging of pull requests when integration tests are failing.
+This project shows an example of setting up a dockerised API to run integration tests against, allowing your integration tests to be run in every commit / pull request, and optionally to disable merging of pull requests when integration tests are failing.
 
 # Why would you want to do this?
 

@@ -7,5 +7,9 @@
     "username": "root",
     "password": "password",
     "database": "application_database"
+  },
+  "redis": {
+    "host": "redis",
+    "port": 6379    
   }
 }
