@@ -19,7 +19,7 @@
     "config": "^3.2.4",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "yup": "^0.32.1"
   },
   "devDependencies": {
